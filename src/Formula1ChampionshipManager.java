@@ -164,7 +164,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager {
     @Override
     public void saveInFile() {
         try {
-            FileWriter writeInfo = new FileWriter("C:\\Users\\Shuaib\\Desktop\\IIT 2nd year\\1st Semester\\Course work\\OOP\\CW_work\\src\\Savefile");
+            FileWriter writeInfo = new FileWriter("C:\\Users\\Shuaib\\Documents\\GitHub\\OOPCW\\out\\production\\OopVivaCw\\Savefile");
             writeInfo.write(driversParticipating.size() + "\n");
             for (int i = 0; i < driversParticipating.size(); i++) {
                 writeInfo.write(driversParticipating.get(i).getDriver_Name() + "\n");
@@ -197,7 +197,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager {
     @Override
     public void loadToFile() {
         try {
-            File fileInfoReader = new File("C:\\Users\\Shuaib\\Desktop\\IIT 2nd year\\1st Semester\\Course work\\OOP\\CW_work\\src\\Savefile");
+            File fileInfoReader = new File("C:\\Users\\Shuaib\\Documents\\GitHub\\OOPCW\\out\\production\\OopVivaCw\\Savefile");
             Scanner readInfo = new Scanner(fileInfoReader);
             while (readInfo.hasNextLine()) {
                 int driversParticipatingSize = Integer.parseInt(readInfo.nextLine());
@@ -235,7 +235,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager {
 
     public void reloadFile() {
         try {
-            File fileInfoReader = new File("C:\\Users\\Shuaib\\Desktop\\IIT 2nd year\\1st Semester\\Course work\\OOP\\CW_work\\src\\Savefile");
+            File fileInfoReader = new File("C:\\Users\\Shuaib\\Documents\\GitHub\\OOPCW\\out\\production\\OopVivaCw\\Savefile");
             Scanner readInfo = new Scanner(fileInfoReader);
             while (readInfo.hasNextLine()) {
                 int driversParticipatingSize = Integer.parseInt(readInfo.nextLine());
